@@ -1,5 +1,5 @@
-function circleArea(radius) {
-  return (radius**2)*Math.PI;
+function circleArea (radius) {
+  return Math.PI * Math.pow(radius, 2);
 }
 
 console.log(circleArea(8));
