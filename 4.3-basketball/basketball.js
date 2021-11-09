@@ -6,18 +6,25 @@ const johnAvg = avg(john);
 const mikeAvg = avg(mike);
 const maryAvg = avg(mary);
 
-if (johnAvg === mikeAvg && johnAvg === maryAvg) {
-  console.log(`It's a draw!`)
-}
 
-else if (johnAvg > mikeAvg && johnAvg > maryAvg) {
+if (johnAvg > mikeAvg && johnAvg > maryAvg) {
   console.log(`John is the winner with the score of ${johnAvg}!`)
-}
+  }
 
 else if (mikeAvg > johnAvg && mikeAvg > maryAvg) {
   console.log(`Mike is the winner with the score of ${mikeAvg}!`)
-}
+  }
 
 else {
   console.log(`Mary is the winner with the score of ${maryAvg}!`)
-}
+  }
+
+if (johnAvg === mikeAvg && johnAvg === maryAvg) {
+  console.log(`It's a draw between everyone!`);
+  } else if (johnAvg === mikeAvg) {
+  console.log(`It's a draw between John and Mike`);
+  } else if (johnAvg === maryAvg) {
+  console.log(`It's a draw between John and Mary`);
+  } else if (mikeAvg === maryAvg) {
+  console.log(`It's a draw between Mike and Mary`)
+  }
