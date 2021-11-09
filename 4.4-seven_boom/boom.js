@@ -6,7 +6,7 @@ function sevenBoom(n) {
       console.log(`BOOM-BOOM`);
     }
 
-    else if (i % 7 === 0 || i.toString().match(/7/)) {
+    else if (i % 7 === 0) {
       console.log(`BOOM`)
     }
 
