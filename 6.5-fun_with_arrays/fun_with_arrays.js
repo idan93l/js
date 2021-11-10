@@ -11,7 +11,7 @@ arr.fill(bass);
 console.log(arr);
 
 // 2.
-let newArr = Array.from({length: 101}, (v, i) => i)
+let newArr = Array.from({length: 100}, (_, i) => i + 1)
 console.log(newArr);
 
 // 3.
