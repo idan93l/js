@@ -54,4 +54,4 @@ bookUtils.setPublisher(book1, `Dave`, `Washington`);
 console.log(book1);
 bookUtils.setPublisher(book2, `Dave`, `Seatle`);
 console.log(book2);
-isSamePublisher(book1, book2);
+console.log(bookUtils.isSamePublisher(book1, book2));
