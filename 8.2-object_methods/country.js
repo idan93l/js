@@ -10,10 +10,10 @@ const myCountry = {
     captial called ${this.capital}.`
   },
   checkIsland() {
-    this.neighbours.length > 0 ? this.isIsland = false : this.isIsland = true;
+    return this.neighbours.length > 0 ? this.isIsland = false : this.isIsland = true;
   }
 }
 
-myCountry.checkIsland();
-console.log(myCountry.describe());
 console.log(myCountry);
+console.log(myCountry.describe());
+console.log(myCountry.checkIsland());
