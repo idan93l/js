@@ -39,7 +39,7 @@ const showFirstAndLast = arr => {
 showFirstAndLast([`I`, `am`, `iron`, `man`]);
 
 // 4.
-const vowelCount = str => {
+const vowelCount1 = str => {
   str = str.toLowerCase();
   arr = str.split(``);
   let vowels = [`a`, `i`, `e`, `y`, `o`, `u`];
@@ -58,7 +58,26 @@ const vowelCount = str => {
   console.log(obj);
 }
 
-vowelCount(`aaaiiiiiiiuuuyybvck`);
+vowelCount1(`aaaiiiiiiiuuuyybvckAIEYOU`);
+
+const vowelCount = str => {
+  str = str.toLowerCase();
+  arr = str.split(``);
+  let vowels = `aieyou`;
+  let obj = {};
+  arr.forEach(function (letter) {
+    if (vowels.includes(letter)) {
+        if (obj[letter]) {
+          obj[letter]++;
+        } else {
+          obj[letter] = 1;
+        }
+      }
+    });
+  console.log(obj);
+}
+
+vowelCount(`aaaiiiiiiiuuuyybvckAIEYOU`);
 
 // 5.
 const capitalize = str => {
