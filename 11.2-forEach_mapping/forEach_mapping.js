@@ -76,12 +76,18 @@ const shiftLetter = str => {
   arr = str.split(``);
   const shifted = arr.map(function (letter) {
     let newLetter = letter.charCodeAt() - 1;
+    if (letter === ` `) {
+      return letter;
+    }
+    if(letter === `a`) {
+      return `z`;
+    }
     return String.fromCharCode(newLetter);
   });
-  return shifted;
+  return shifted.join(` `);
 }
 
-console.log(shiftLetter(`gfnjk`));
+console.log(shiftLetter(`hello worldaaa`));
 
 // 7.
 const swapCase = str => {
