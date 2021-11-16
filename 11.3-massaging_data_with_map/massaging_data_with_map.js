@@ -75,7 +75,6 @@ const favoriteFoods = data => {
     let fish = person.favoriteFoods.fish;
     let mAndF = meats.concat(fish);
     foods = foods.concat(mAndF);
-    return foods;
   });
   foods.forEach(food => {
     if (obj[food]) {
