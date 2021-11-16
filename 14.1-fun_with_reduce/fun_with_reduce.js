@@ -1,4 +1,4 @@
-const arr = [2, 3, 1, 3];
+const arr = [2, 3, 1, 2];
 
 // 1.
 const max = arr.reduce((max, currentVal) => {
